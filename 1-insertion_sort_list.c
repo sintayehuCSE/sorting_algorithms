@@ -23,7 +23,8 @@ void insertion_sort_list(listint_t **list)
 					/*Swap and print*/
 					temp = insert->prev;
 					temp->next = insert->next;
-					insert->next->prev = temp;
+					if (insert->next)
+						insert->next->prev = temp;
 					insert->next = temp;
 					if (temp->prev)
 					{
