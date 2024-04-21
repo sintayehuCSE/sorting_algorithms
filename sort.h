@@ -27,9 +27,12 @@ void quick_sort(int *array, size_t size);
 void quickly_sort(int *array, int low, int high, size_t size);
 size_t partition_array(int *array, int low, int high, size_t size);
 void shell_sort(int *array, size_t size);
+void cocktail_sort_list(listint_t **list);
+listint_t *forward_move(listint_t **list, listint_t *fwd, int *swap);
+listint_t *backward_move(listint_t **list, listint_t *bwd, int *swap);
 
 
-/*.........Alternative solutions to a problem/copied though*/
+/*......Alternative solutions to a quick sort algorithm/copied though......*/
 void swap_ints(int *a, int *b);
 int lomuto_partition(int *array, size_t size, int left, int right);
 void lomuto_sort(int *array, size_t size, int left, int right);
