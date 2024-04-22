@@ -69,7 +69,7 @@ int *countArray(int k)
 }
 /**
  * sortArray - Create an array for storing a sorted element
- * @The size of the sort array
+ * @n: The size of the sort array
  *
  * Return: Pointer to the sort array
  */
