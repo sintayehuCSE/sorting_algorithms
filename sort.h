@@ -32,6 +32,7 @@ listint_t *forward_move(listint_t **list, listint_t *fwd, int *swap);
 listint_t *backward_move(listint_t **list, listint_t *bwd, int *swap);
 void counting_sort(int *array, size_t size);
 int *countArray(int k);
+int *sortArray(int n);
 
 
 /*......Alternative solutions to a quick sort algorithm/copied though......*/
