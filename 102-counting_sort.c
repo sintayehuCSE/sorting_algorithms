@@ -9,9 +9,8 @@
  */
 void counting_sort(int *array, size_t size)
 {
-	int *count;
+	int *count, *sorted;
 	int n = (int)(size), i;
-	int sorted[n];
 	int k; /*`K` is to find the maximum element within the array*/
 
 	if (!array || size < 2)
@@ -23,7 +22,8 @@ void counting_sort(int *array, size_t size)
 			k = array[i];
 	}
 	count = countArray(k);
-	if (!count)
+	sorted = sortArray(n);
+	if (!count || !sorted)
 		return;
 	for (i = 0; i < n; i++)/*finding frequence of each distinit element*/
 	{
@@ -44,6 +44,7 @@ void counting_sort(int *array, size_t size)
 		array[i] = sorted[i];
 	}
 	free(count);
+	free(sorted);
 }
 /**
  *countArray - Create a count array and intilize it to zero
@@ -65,4 +66,19 @@ int *countArray(int k)
 			count[i] = 0;
 	}
 	return (count);
+}
+/**
+ * sortArray - Create an array for storing a sorted element
+ * @The size of the sort array
+ *
+ * Return: Pointer to the sort array
+ */
+int *sortArray(int n)
+{
+	int *sort;
+
+	sort = (int *)malloc(sizeof(int) * n);
+	if (!sort)
+		return (sort);
+	return (sort);
 }
