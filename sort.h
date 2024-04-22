@@ -30,6 +30,8 @@ void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
 listint_t *forward_move(listint_t **list, listint_t *fwd, int *swap);
 listint_t *backward_move(listint_t **list, listint_t *bwd, int *swap);
+void counting_sort(int *array, size_t size);
+int *countArray(int k);
 
 
 /*......Alternative solutions to a quick sort algorithm/copied though......*/
