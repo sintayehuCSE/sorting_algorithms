@@ -33,11 +33,10 @@ listint_t *backward_move(listint_t **list, listint_t *bwd, int *swap);
 void counting_sort(int *array, size_t size);
 int *countArray(int k);
 int *sortArray(int n);
-
-
-/*......Alternative solutions to a quick sort algorithm/copied though......*/
-void swap_ints(int *a, int *b);
-int lomuto_partition(int *array, size_t size, int left, int right);
-void lomuto_sort(int *array, size_t size, int left, int right);
+void merge_sort(int *array, size_t size);
+void divide(int *array, int left, int right);
+void conquer(int *array, int left, int middle, int right);
+int *createSublist(int sublist_size);
+void destroySublist(int *sublist);
 
 #endif /* SORTING_ALGORITHM */
