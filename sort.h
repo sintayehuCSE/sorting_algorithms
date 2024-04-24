@@ -40,5 +40,9 @@ int *createSublist(int sublist_size);
 void destroySublist(int *sublist);
 void heap_sort(int *array, size_t size);
 void heapify(int *array, size_t size, int n, int root);
+void radix_sort(int *array, size_t size);
+int getMax(int *array, int size);
+void countSortRadix(int *array, size_t size, int place);
+int *dynamicArray(int size);
 
 #endif /* SORTING_ALGORITHM */
