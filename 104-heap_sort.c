@@ -14,20 +14,23 @@ void heap_sort(int *array, size_t size)
 {
 	int mid, i, temp;
 
-	mid = (size / 2) - 1;
-	for (i = mid; i >= 0; i--)
+	if (array && size > 1)
 	{
-		heapify(array, size, (int)size, i);
-	}
-	i = size - 1;
-	while (i > 0)
-	{
-		temp = array[0];
-		array[0] = array[i];
-		array[i] = temp;
-		print_array(array, size);
-		heapify(array, size, i, 0);
-		i--;
+		mid = (size / 2) - 1;
+		for (i = mid; i >= 0; i--)
+		{
+			heapify(array, size, (int)size, i);
+		}
+		i = size - 1;
+		while (i > 0)
+		{
+			temp = array[0];
+			array[0] = array[i];
+			array[i] = temp;
+			print_array(array, size);
+			heapify(array, size, i, 0);
+			i--;
+		}
 	}
 }
 /**
