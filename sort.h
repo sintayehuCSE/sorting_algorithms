@@ -38,5 +38,7 @@ void divide(int *array, int left, int right);
 void conquer(int *array, int left, int middle, int right);
 int *createSublist(int sublist_size);
 void destroySublist(int *sublist);
+void heap_sort(int *array, size_t size);
+void heapify(int *array, size_t size, int n, int root);
 
 #endif /* SORTING_ALGORITHM */
