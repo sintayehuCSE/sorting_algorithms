@@ -44,5 +44,11 @@ void radix_sort(int *array, size_t size);
 int getMax(int *array, int size);
 void countSortRadix(int *array, size_t size, int place);
 int *dynamicArray(int size);
+void bitonic_sort(int *array, size_t size);
+void bitonic_seq(int *array, int left, int right, int type, size_t size);
+void bitonic_merge(int *array, int left, int right, int type, size_t size);
+void compare_and_swap(int *array, int i, int j, int type);
+void print_status(int *array, int left, int right, int type, int stat,
+		  size_t size);
 
 #endif /* SORTING_ALGORITHM */
