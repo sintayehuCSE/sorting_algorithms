@@ -50,5 +50,8 @@ void bitonic_merge(int *array, int left, int right, int type);
 void compare_and_swap(int *array, int i, int j, int type);
 void print_status(int *array, int left, int right, int type, int stat,
 		  size_t size);
+void quick_sort_hoare(int *array, size_t size);
+void quick_hoare(int *array, int left, int right, size_t size);
+int hoare_partition(int *array, int left, int right, size_t size);
 
 #endif /* SORTING_ALGORITHM */
