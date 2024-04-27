@@ -36,7 +36,7 @@ void bitonic_seq(int *array, int left, int right, int type, size_t size)
 		bitonic_seq(array, left + k, k, 0, size);
 		/*Merge back the result of bitonifying operation to get partial*/
 		/*and finally full bitonic sequence from the input sequence*/
-		bitonic_merge(array, left, right, type, size);
+		bitonic_merge(array, left, right, type);
 		print_status(array, left, right, type, 1, size);
 	}
 }
@@ -46,11 +46,10 @@ void bitonic_seq(int *array, int left, int right, int type, size_t size)
  * @left: The left index bound of current sequence range
  * @right: The right index bound of current sequence range
  * @type: The direction for merging, Ascending or Descending
- * @size: The size of the input sequence
  *
  * Return: Nothing
  */
-void bitonic_merge(int *array, int left, int right, int type, size_t size)
+void bitonic_merge(int *array, int left, int right, int type)
 {
 	int k, i;
 
@@ -59,8 +58,8 @@ void bitonic_merge(int *array, int left, int right, int type, size_t size)
 		k = right / 2;
 		for (i = left; i < left + k; i++)
 			compare_and_swap(array, i, i + k, type);
-		bitonic_merge(array, left, k, type, size);
-		bitonic_merge(array, left + k, k, type, size);
+		bitonic_merge(array, left, k, type);
+		bitonic_merge(array, left + k, k, type);
 	}
 }
 /**
