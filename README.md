@@ -191,3 +191,170 @@ var factorial = function(n) {
 * O(nlog(n))
 * O(n!)
 * O(2^n)
+
+## Question #6
+What is the time complexity of setting value at index n in an unsorted Python 3 list?
+
+* O(n^2)
+* O(log(n))
+* O(n)
+* O(1)
+* O(nlog(n))
+* O(n!)
+* O(2^n)
+
+## Question #7
+What is the time complexity of searching for an element in a stack of size n?
+
+* O(n^2)
+* O(log(n))
+* O(n)
+* O(1)
+* O(nlog(n))
+* O(n!)
+* O(2^n)
+
+## Question #8
+What is the time complexity of “pushing” an element into a queue if you are given a pointer to both the head and the tail of the queue?
+
+* O(n^2)
+* O(log(n))
+* O(n)
+* O(1)
+* O(nlog(n))
+* O(n!)
+* O(2^n)
+
+## Question #9
+What is the time complexity of searching for an element - worst case - in a hash table with the implementation you used during the previous Hash Table C project (chaining)?
+
+* O(n^2)
+* O(log(n))
+* O(n)
+* O(1)
+* O(nlog(n))
+* O(n!)
+* O(2^n)
+
+## Question #10
+What is the time complexity of this function / algorithm?
+
+```
+void f(int n)
+{
+    int i;
+    int j;
+
+    for (i = 0; i < n; i++)
+    {
+		if (i % 2 == 0)
+		{
+			for (j = 1; j < n; j = j * 2)
+			{
+				printf("[%d] [%d]\n", i, j);
+			}
+		}
+		else
+		{
+			for (j = 0; j < n; j = j + 2)
+			{
+				printf("[%d] [%d]\n", i, j);
+			}
+		}
+    }
+}
+```
+* O(n^2)
+* O(log(n))
+* O(n)
+* O(1)
+* O(nlog(n))
+* O(n!)
+* O(2^n)
+
+## Question #11
+Assuming you have a pointer to the node to insert, what is the time complexity of inserting after the nth element of a doubly linked list?
+
+* O(n^2)
+* O(log(n))
+* O(n)
+* O(1)
+* O(nlog(n))
+* O(n!)
+* O(2^n)
+
+## Question #12
+What is the time complexity accessing the nth element in an unsorted Python 3 list?
+
+* O(n^2)
+* O(log(n))
+* O(n)
+* O(1)
+* O(nlog(n))
+* O(n!)
+* O(2^n)
+
+## Question #13
+What is the time complexity of accessing the nth element of a doubly linked list?
+
+* O(n^2)
+* O(log(n))
+* O(n)
+* O(1)
+* O(nlog(n))
+* O(n!)
+* O(2^n)
+
+## Question #14
+What is the time complexity of searching for an element in an unsorted Python 3 list of size n?
+
+* O(n^2)
+* O(log(n))
+* O(n)
+* O(1)
+* O(nlog(n))
+* O(n!)
+* O(2^n)
+
+## Question #15
+What is the time complexity of searching for an element in a singly linked list of size n?
+
+* O(n^2)
+* O(log(n))
+* O(n)
+* O(1)
+* O(nlog(n))
+* O(n!)
+* O(2^n)
+
+## Question #16
+Assuming you have a pointer to the node to set the value of, what is the time complexity of setting the value of the nth element in a doubly linked list?
+
+* O(n^2)
+* O(log(n))
+* O(n)
+* O(1)
+* O(nlog(n))
+* O(n!)
+* O(2^n)
+
+## Question #17
+What is the time complexity of setting a value at index n in an unsorted array?
+
+* O(n^2)
+* O(log(n))
+* O(n)
+* O(1)
+* O(nlog(n))
+* O(n!)
+* O(2^n)
+
+## Question #18
+What is the time complexity of searching for an element in an unsorted array of size n?
+* O(n^2)
+* O(log(n))
+* O(n)
+* O(1)
+* O(nlog(n))
+* O(n!)
+* O(2^n)
