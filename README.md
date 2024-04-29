@@ -6,8 +6,7 @@
 This project is meant to be done by groups of two students. Each group of two should [pair program](https://en.wikipedia.org/wiki/Pair_programming) for at least the mandatory part.
 
 ## Resources
-Read or Watch:
-==============
+**Read or Watch:**
 *   [Sorting Algorithm](https://en.wikipedia.org/wiki/Sorting_algorithm)
 *   [Big O Notation](https://stackoverflow.com/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation)
 [Sorting Algorithm Animations](https://www.toptal.com/developers/sorting-algorithms)
