@@ -1,1 +1,6 @@
-This a repository for all problems related to sorting and Big O notation project
+#0x1B. C - Sorting algorithm & Big O
+`C`
+`Algorithm`
+`Data Strructure`
+## Requirements
+### General
