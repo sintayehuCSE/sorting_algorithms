@@ -3,9 +3,7 @@
 `Algorithm`
 `Data Strructure`
 
-
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/248/willy-wonka.png)
-
 
 ## Background Context
 This project is meant to be done by groups of two students. Each group of two should [pair program](https://en.wikipedia.org/wiki/Pair_programming) for at least the mandatory part.
@@ -145,6 +143,47 @@ What is the time complexity of setting the value of the nth element in a singly 
 ## Question #2
 What is the time complexity of inserting at index n on an unsorted array?
 
+* O(n^2)
+* O(log(n))
+* O(n)
+* O(1)
+* O(nlog(n))
+* O(n!)
+* O(2^n)
+
+## Question #3
+What is the best case time complexity searching for an element in a hash table with the implementation you used during the previous Hash Table C project (chaining)?
+
+* O(n^2)
+* O(log(n))
+* O(n)
+* O(1)
+* O(nlog(n))
+* O(n!)
+* O(2^n)
+
+## Question #4
+What is the time complexity of removing at index n from an unsorted Python 3 list?
+
+* O(n^2)
+* O(log(n))
+* O(n)
+* O(1)
+* O(nlog(n))
+* O(n!)
+* O(2^n)
+
+## Question #5
+What is the time complexity of this function / algorithm?
+```
+var factorial = function(n) {
+    if(n == 0) {
+    	 return 1
+    } else {
+         return n * factorial(n - 1);
+    }
+}
+```
 * O(n^2)
 * O(log(n))
 * O(n)
